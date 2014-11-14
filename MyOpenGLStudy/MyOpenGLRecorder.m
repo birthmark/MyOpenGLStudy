@@ -167,8 +167,7 @@
         OSType pixelFormat = kCVPixelFormatType_32BGRA;
         
         CVReturn result = CVPixelBufferCreateWithBytes (kCFAllocatorDefault, size.width, size.height, pixelFormat, pixelsBuffer,
-                                                        pixelBytesPerRow, NULL, 0, NULL, &pixelBufferRef);
-        free(pixelsBuffer);
+                                                        pixelBytesPerRow, pixelBufferReleaseBytesCallback, 0, NULL, &pixelBufferRef);
         
         if (result == kCVReturnSuccess) {
             if(![self.adaptor appendPixelBuffer:pixelBufferRef withPresentationTime:currentTime]) {
@@ -183,6 +182,12 @@
         }
     }
     NSLog(@"captureScreenVideo ----- end");
+}
+
+void pixelBufferReleaseBytesCallback( void *releaseRefCon, const void *baseAddress )
+{
+    free((GLubyte*)baseAddress);
+    NSLog(@"pixelBufferReleaseBytesCallback");
 }
 
 - (CGSize)frameBufferSize
