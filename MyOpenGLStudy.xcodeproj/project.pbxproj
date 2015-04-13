@@ -28,6 +28,8 @@
 		71963C331988DEB8002800EE /* Simple.vert in Sources */ = {isa = PBXBuildFile; fileRef = 71963C321988DEB8002800EE /* Simple.vert */; };
 		71963C351988DECF002800EE /* Simple.frag in Sources */ = {isa = PBXBuildFile; fileRef = 71963C341988DECF002800EE /* Simple.frag */; };
 		71963C381988E101002800EE /* RenderingEngine2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71963C361988E101002800EE /* RenderingEngine2.cpp */; };
+		71F84C8B1ADC09C30022631B /* UIView+Named.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F84C881ADC09C30022631B /* UIView+Named.m */; };
+		71F84C8C1ADC09C30022631B /* UIView+RelativeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F84C8A1ADC09C30022631B /* UIView+RelativeLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,10 @@
 		71A19B6E198A4DEA002FE3AA /* Matrix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Matrix.hpp; sourceTree = "<group>"; };
 		71A19B6F198A4DEA002FE3AA /* Quaternion.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Quaternion.hpp; sourceTree = "<group>"; };
 		71A19B70198A4DEA002FE3AA /* Vector.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Vector.hpp; sourceTree = "<group>"; };
+		71F84C871ADC09C30022631B /* UIView+Named.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Named.h"; sourceTree = "<group>"; };
+		71F84C881ADC09C30022631B /* UIView+Named.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Named.m"; sourceTree = "<group>"; };
+		71F84C891ADC09C30022631B /* UIView+RelativeLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RelativeLayout.h"; sourceTree = "<group>"; };
+		71F84C8A1ADC09C30022631B /* UIView+RelativeLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RelativeLayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,10 @@
 		712881991987527400E82E98 /* MyOpenGLStudy */ = {
 			isa = PBXGroup;
 			children = (
+				71F84C871ADC09C30022631B /* UIView+Named.h */,
+				71F84C881ADC09C30022631B /* UIView+Named.m */,
+				71F84C891ADC09C30022631B /* UIView+RelativeLayout.h */,
+				71F84C8A1ADC09C30022631B /* UIView+RelativeLayout.m */,
 				7195B80519FBC7BD007F5D62 /* MyOpenGLRecorder.h */,
 				7195B80619FBC7BD007F5D62 /* MyOpenGLRecorder.m */,
 				712881A21987527400E82E98 /* AppDelegate.h */,
@@ -317,9 +327,11 @@
 				712881CB1987536000E82E98 /* MainViewController.m in Sources */,
 				7195B80719FBC7BD007F5D62 /* MyOpenGLRecorder.m in Sources */,
 				71963C381988E101002800EE /* RenderingEngine2.cpp in Sources */,
+				71F84C8C1ADC09C30022631B /* UIView+RelativeLayout.m in Sources */,
 				712881A01987527400E82E98 /* main.m in Sources */,
 				71963C331988DEB8002800EE /* Simple.vert in Sources */,
 				712881D91987D8F400E82E98 /* RenderingEngine1.cpp in Sources */,
+				71F84C8B1ADC09C30022631B /* UIView+Named.m in Sources */,
 				71963C351988DECF002800EE /* Simple.frag in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
